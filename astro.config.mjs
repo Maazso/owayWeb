@@ -6,7 +6,6 @@ import awsAmplify from 'astro-aws-amplify';
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://oway.info",
   integrations: [tailwind(), mdx(), sitemap()],
   output: 'server',
   adapter: awsAmplify(),
