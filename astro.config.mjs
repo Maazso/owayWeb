@@ -3,11 +3,11 @@ import tailwind from "@astrojs/tailwind";
 import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
 import awsAmplify from 'astro-aws-amplify';
-import deno from '@astrojs/deno';
 
 // https://astro.build/config
 export default defineConfig({
+  site: "https://oway.live",
   integrations: [tailwind(), mdx(), sitemap()],
   output: 'server',
-  adapter: deno(),
+  adapter: awsAmplify(),
 });
