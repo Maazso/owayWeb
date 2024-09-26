@@ -9555,7 +9555,7 @@ New
         Astro2.site
       ).toString();
       const { title } = Astro2.props;
-      const makeTitle = title ? title + " | Astroship" : "Astroship - Starter Template for Astro with Tailwind CSS";
+      const makeTitle = title ? title + " | Astroship" : "Oway - Productivity Accelerator";
       return renderTemplate`<html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><meta name="generator"${addAttribute(Astro2.generator, "content")}><!-- <link rel="preload" as="image" href={src} alt="Hero" /> -->${renderComponent($$result, "SEO", $$SEO, { "title": makeTitle, "description": "Astroship is a starter website template for Astro built with TailwindCSS.", "canonical": canonicalURL, "twitter": {
         creator: "@surjithctly",
         site: "@web3templates",
@@ -9564,7 +9564,7 @@ New
         basic: {
           url: canonicalURL,
           type: "website",
-          title: `Astroship - Starter Template for Astro`,
+          title: `Oway - Productivity Accelerator`,
           image: resolvedImageWithDomain
         },
         image: {
