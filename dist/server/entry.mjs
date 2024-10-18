@@ -9555,7 +9555,7 @@ New
         Astro2.site
       ).toString();
       const { title } = Astro2.props;
-      const makeTitle = title ? title + " | Astroship" : "Oway - Productivity Accelerator";
+      const makeTitle = title ? title + " | Oway" : "Oway - Productivity Accelerator";
       return renderTemplate`<html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><meta name="generator"${addAttribute(Astro2.generator, "content")}><!-- <link rel="preload" as="image" href={src} alt="Hero" /> -->${renderComponent($$result, "SEO", $$SEO, { "title": makeTitle, "description": "Astroship is a starter website template for Astro built with TailwindCSS.", "canonical": canonicalURL, "twitter": {
         creator: "@surjithctly",
         site: "@web3templates",
@@ -51432,10 +51432,10 @@ var init_pricing_aa7d7e9f = __esm({
         {
           name: "Startup",
           price: {
-            monthly: "$19",
-            annual: "$16",
+            monthly: "$5",
+            annual: "$60",
             discount: "10%",
-            original: "$24"
+            original: "$60"
           },
           popular: true,
           features: [

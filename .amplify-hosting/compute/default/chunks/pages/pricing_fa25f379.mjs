@@ -51,10 +51,10 @@ const $$Pricing = createComponent(($$result, $$props, $$slots) => {
     {
       name: "Startup",
       price: {
-        monthly: "$19",
-        annual: "$16",
+        monthly: "$5",
+        annual: "$50",
         discount: "10%",
-        original: "$24"
+        original: "$60"
       },
       popular: true,
       features: [

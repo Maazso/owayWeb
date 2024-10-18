@@ -3,8 +3,8 @@ draft: false
 name: "Maaz jedh"
 title: "Founder & CEO"
 avatar: {
-    src: "https://demo-source.imgix.net/puppy.jpg?&fit=crop&w=280",
-    alt: "Robert Palmer"
+    src: "https://oway.imgix.net/IMG_3250.jpeg",
+    alt: "Maaz Jedh"
 }
 publishDate: "2022-11-09 15:39"
 ---

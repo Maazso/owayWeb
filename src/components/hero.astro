@@ -3,30 +3,31 @@ import { Picture } from "astro:assets";
 import heroImage from "assets/hero.png";
 import Link from "@components/ui/link.astro";
 import { Icon } from "astro-icon";
+import heroImage from './src/assets/hero.png';
+
 ---
 
 <main
   class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-12 md:pb-24">
   <div class="py-6 md:order-1 hidden md:block">
     <Picture
-      src={heroImage}
-      alt="Astronaut in the air"
-      widths={[200, 400, 600]}
-      sizes="(max-width: 800px) 100vw, 620px"
-      loading="eager"
-      format="avif"
-    />
+    src={heroImage}
+    alt="Descriptive alt text for your image"
+    widths={[200, 400, 600, 1200]}
+    sizes="(max-width: 800px) 100vw, 620px"
+    width={1200} 
+    height={800} 
+    loading="eager"
+    format="avif"
+  />
   </div>
   <div>
-    <h1
-      class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter">
-      AI-Powered Email Assistant
+    <h1 class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter">
+      AI-Powered Assistant for Email, Calendar, and Phone Tasks
     </h1>
     <p class="text-lg mt-4 text-slate-600 max-w-xl">
-      OWAY is an advanced AI-powered email assistant designed to revolutionize
-      the way you manage your inbox. Tailored for professionals and businesses,
-      OWAY offers intelligent email management, streamlined communication, and
-      automated workflows.
+      OWAY is an AI assistant designed to simplify email, calendar, and phone tasks, revolutionizing your workflow.
+      Tailored to your needs, OWAY offers intelligent management, seamless scheduling, and automation features.
     </p>
     <div class="mt-6 flex flex-col sm:flex-row gap-3">
       <!-- <Link
