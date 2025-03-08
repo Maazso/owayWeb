@@ -185,12 +185,26 @@ declare module 'astro:content' {
 
 	type ContentEntryMap = {
 		"blog": {
+"email-manegment.md": {
+	id: "email-manegment.md";
+  slug: "email-manegment";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
 "essential-data-structures-algorithms.md": {
 	id: "essential-data-structures-algorithms.md";
   slug: "essential-data-structures-algorithms";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
+} & { render(): Render[".md"] };
+"oway-ai-productivity.md": {
+	id: "oway-ai-productivity.md";
+  slug: "oway-ai-productivity";
+  body: string;
+  collection: "blog";
+  data: any
 } & { render(): Render[".md"] };
 };
 "team": {
@@ -199,7 +213,7 @@ declare module 'astro:content' {
   slug: "robert-palmer";
   body: string;
   collection: "team";
-  data: InferEntrySchema<"team">
+  data: any
 } & { render(): Render[".md"] };
 };
 
@@ -211,5 +225,5 @@ declare module 'astro:content' {
 
 	type AnyEntryMap = ContentEntryMap & DataEntryMap;
 
-	type ContentConfig = typeof import("../src/content/config");
+	type ContentConfig = never;
 }
