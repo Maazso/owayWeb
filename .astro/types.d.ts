@@ -190,21 +190,21 @@ declare module 'astro:content' {
   slug: "email-manegment";
   body: string;
   collection: "blog";
-  data: any
+  data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
 "essential-data-structures-algorithms.md": {
 	id: "essential-data-structures-algorithms.md";
   slug: "essential-data-structures-algorithms";
   body: string;
   collection: "blog";
-  data: any
+  data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
 "oway-ai-productivity.md": {
 	id: "oway-ai-productivity.md";
   slug: "oway-ai-productivity";
   body: string;
   collection: "blog";
-  data: any
+  data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
 };
 "team": {
@@ -213,7 +213,7 @@ declare module 'astro:content' {
   slug: "robert-palmer";
   body: string;
   collection: "team";
-  data: any
+  data: InferEntrySchema<"team">
 } & { render(): Render[".md"] };
 };
 
@@ -225,5 +225,5 @@ declare module 'astro:content' {
 
 	type AnyEntryMap = ContentEntryMap & DataEntryMap;
 
-	type ContentConfig = never;
+	type ContentConfig = typeof import("../src/content/config");
 }
