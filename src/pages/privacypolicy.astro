@@ -1,0 +1,140 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+---
+<Layout title="Privacy Policy">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">Privacy Policy</Fragment>
+      <Fragment slot="desc">
+        At <strong>OWAY</strong>, we are committed to safeguarding your privacy. This Privacy Policy explains how we collect, use, protect, and share your personal data while ensuring compliance with global data protection regulations, including GDPR, CCPA, and other applicable laws.
+      </Fragment>
+    </Sectionhead>
+
+    <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
+      <h2 class="font-bold text-3xl text-gray-800">1. Introduction</h2>
+      <p class="text-lg leading-relaxed text-slate-500">
+        OWAY is an AI-powered productivity assistant designed to manage email, schedule meetings, and handle communications efficiently. This Privacy Policy applies to all users who engage with OWAY’s services, including web and mobile applications.
+      </p>
+    </div>
+
+    <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-12">
+      <h2 class="font-bold text-3xl text-gray-800">2. Definitions</h2>
+      <ul class="list-disc list-inside text-lg text-slate-500">
+        <li><strong>"Personal Data"</strong> - Any information that identifies or can be used to identify an individual.</li>
+        <li><strong>"Processing"</strong> - Any operation performed on Personal Data, including collection, storage, and deletion.</li>
+        <li><strong>"Controller"</strong> - OWAY, determining the purpose and means of processing Personal Data.</li>
+        <li><strong>"Processor"</strong> - Third-party services acting on behalf of OWAY.</li>
+      </ul>
+    </div>
+
+    <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-12">
+      <h2 class="font-bold text-3xl text-gray-800">3. Information We Collect</h2>
+      <ul class="list-disc list-inside text-lg text-slate-500">
+        <li><strong>Personal Information:</strong> Name, email, phone number.</li>
+        <li><strong>Communication Data:</strong> Emails, calendar events, call metadata.</li>
+        <li><strong>Device & Technical Data:</strong> IP address, browser type, device identifiers.</li>
+        <li><strong>Usage Data:</strong> Interactions with OWAY, preferences, AI-generated insights.</li>
+      </ul>
+    </div>
+
+    <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-12">
+      <h2 class="font-bold text-3xl text-gray-800">4. Legal Basis for Processing</h2>
+      <table class="w-full text-left border border-gray-300">
+        <thead>
+          <tr class="bg-gray-100">
+            <th class="p-3">Purpose</th>
+            <th class="p-3">Legal Basis</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="p-3">Providing OWAY services</td>
+            <td class="p-3">Contractual necessity</td>
+          </tr>
+          <tr>
+            <td class="p-3">AI-driven personalization</td>
+            <td class="p-3">Legitimate interest</td>
+          </tr>
+          <tr>
+            <td class="p-3">Security & compliance</td>
+            <td class="p-3">Legal obligation</td>
+          </tr>
+          <tr>
+            <td class="p-3">Marketing & promotions</td>
+            <td class="p-3">Consent</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-12">
+      <h2 class="font-bold text-3xl text-gray-800">5. Data Protection & Security</h2>
+      <ul class="list-disc list-inside text-lg text-slate-500">
+        <li><strong>Encryption:</strong> Data is encrypted at rest and in transit.</li>
+        <li><strong>Access Controls:</strong> Multi-factor authentication and restricted access.</li>
+        <li><strong>Compliance:</strong> OWAY meets GDPR, CCPA, and SOC 2 standards.</li>
+      </ul>
+    </div>
+
+    <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-12">
+      <h2 class="font-bold text-3xl text-gray-800">6. Data Sharing & Third Parties</h2>
+      <p class="text-lg leading-relaxed text-slate-500">
+        OWAY <strong>does not sell personal data.</strong> However, we may share information with:
+      </p>
+      <ul class="list-disc list-inside text-lg text-slate-500">
+        <li>Cloud hosting providers (AWS, Google Cloud, Azure).</li>
+        <li>Authentication providers (Google OAuth, Microsoft Login).</li>
+        <li>Legal and compliance authorities when required.</li>
+      </ul>
+    </div>
+
+    <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-12">
+      <h2 class="font-bold text-3xl text-gray-800">7. Your Rights & Control</h2>
+      <p class="text-lg leading-relaxed text-slate-500">
+        Under GDPR & CCPA, you have the right to:
+      </p>
+      <ul class="list-disc list-inside text-lg text-slate-500">
+        <li>Access, correct, or delete your data.</li>
+        <li>Restrict processing and opt out of marketing.</li>
+        <li>Download your data (Data Portability).</li>
+        <li>Withdraw consent at any time.</li>
+      </ul>
+      <p class="text-lg leading-relaxed text-slate-500">
+        Contact us at <strong>privacy@oway.ai</strong> to exercise your rights.
+      </p>
+    </div>
+
+    <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-12">
+      <h2 class="font-bold text-3xl text-gray-800">8. AI Transparency & Automated Processing</h2>
+      <p class="text-lg leading-relaxed text-slate-500">
+        OWAY’s AI models are designed for **efficiency, fairness, and compliance.** Our AI:
+      </p>
+      <ul class="list-disc list-inside text-lg text-slate-500">
+        <li>Does not make legally binding decisions.</li>
+        <li>Is audited regularly for fairness and bias.</li>
+        <li>Processes only user-approved data.</li>
+      </ul>
+    </div>
+
+    <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-12">
+      <h2 class="font-bold text-3xl text-gray-800">9. Updates to This Policy</h2>
+      <p class="text-lg leading-relaxed text-slate-500">
+        We may update this Privacy Policy periodically. Significant changes will be:
+      </p>
+      <ul class="list-disc list-inside text-lg text-slate-500">
+        <li>Communicated via email.</li>
+        <li>Published on our website.</li>
+      </ul>
+    </div>
+
+    <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-12">
+      <h2 class="font-bold text-3xl text-gray-800">10. Contact Information</h2>
+      <p class="text-lg leading-relaxed text-slate-500">
+        📧 Email: darkeagent@gmail.com <br>
+        📞 Phone: [+1-510-426-6613]
+      </p>
+    </div>
+  </Container>
+</Layout>
