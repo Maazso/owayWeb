@@ -11,15 +11,13 @@ export interface Props {
 const canonicalURL = new URL(Astro.url.pathname, Astro.site).toString();
 
 const resolvedImageWithDomain = new URL(
-  "/opengraph.jpg",
+  "/openoway.jpg",
   Astro.site
 ).toString();
 
 const { title } = Astro.props;
 
-const makeTitle = title
-  ? title + " | " + "Astroship"
-  : "Oway - Productivity Accelerator";
+const makeTitle =  "Oway - Productivity Accelerator";
 ---
 
 <!DOCTYPE html>

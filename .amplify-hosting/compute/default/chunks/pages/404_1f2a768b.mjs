@@ -268,7 +268,7 @@ const $$Layout = createComponent(($$result, $$props, $$slots) => {
   Astro2.self = $$Layout;
   const canonicalURL = new URL(Astro2.url.pathname, Astro2.site).toString();
   const resolvedImageWithDomain = new URL(
-    "/opengraph.jpg",
+    "/openoway.jpg",
     Astro2.site
   ).toString();
   const { title } = Astro2.props;
