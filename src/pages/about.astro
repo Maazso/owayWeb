@@ -15,7 +15,7 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
   <Container>
     <Sectionhead>
       <Fragment slot="title">About</Fragment>
-      <Fragment slot="desc">
+      <Fragment slot="desc" class="text-[#3a3a3a] text-lg text-center max-w-3xl mx-auto">
         <strong>OWAY</strong> is an AI assistant that simplifies email management, calendar scheduling, and phone communications. It intelligently prioritizes emails, automates tasks, and offers personalized assistance to keep your inbox and schedule organized.
       
         With seamless calendar integration, easily schedule meetings and manage appointments. OWAY's phone automation handles calls and sets up meetings over the phone.
@@ -26,7 +26,7 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
 
     <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
       <h2 class="font-bold text-3xl text-gray-800">
-        Empowering the world with OWAY.
+        Empowering people everywhere with OWAY
       </h2>
       <!-- <p class="text-lg leading-relaxed text-slate-500">
         We're a multi-cultural team from around the world! We come from diverse
@@ -34,7 +34,7 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
         the job. This is what makes our team so special.
       </p> -->
     </div>
-    <div class="grid md:grid-cols-3 gap-10 mx-auto max-w-4xl mt-12">
+    <!-- <div class="grid md:grid-cols-3 gap-10 mx-auto max-w-4xl mt-12">
       {
         publishedTeamMembers.map((teamMemberEntry) => (
           <div class="group">
@@ -58,6 +58,6 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
           </div>
         ))
       }
-    </div>
+    </div> -->
   </Container>
 </Layout>
