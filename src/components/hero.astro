@@ -4,11 +4,10 @@ import heroImage from "assets/hero.png";
 import owayBooster from "assets/owayBooster.png";
 import Link from "@components/ui/link.astro";
 import { Icon } from "astro-icon";
-
 ---
 
 <main
-  class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-12 md:pb-24">
+  class="grid lg:grid-cols-2 place-items-center pt-16 pb-2 md:pt-6 ">
   <div class="py-6 md:order-1 hidden md:block">
     <Picture
       src={owayBooster}
@@ -19,35 +18,32 @@ import { Icon } from "astro-icon";
       format="avif"
     />
   </div>
-  <div>
-    <h1 class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter">
-      AI-Powered Assistant for Email, Calendar, and Phone Tasks
+  <div class="max-w-2xl">
+    <h1
+      class="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight text-gray-900 max-w-2xl">
+      OWAY handles your <br class="hidden sm:inline" />
+      emails, meetings, and phone calls — <br class="hidden lg:inline" />
+      so you can finally focus.
     </h1>
-    <p class="text-lg mt-4 text-slate-600 max-w-xl">
-      OWAY is an AI assistant designed to simplify email, calendar, and phone tasks, revolutionizing your workflow.
-      Tailored to your needs, OWAY offers intelligent management, seamless scheduling, and automation features.
-    </p>
     <div class="mt-6 flex flex-col sm:flex-row gap-3">
-      <!-- <Link
-        href="#"
-        href="https://web3templates.com/templates/astroship-starter-website-template-for-astro"
-        target="_blank"
-        class="flex gap-1 items-center justify-center"
-        rel="noopener">
-        <Icon class="text-white w-5 h-5" name="bx:bxs-cloud-download" />
-
-        Download for Free
-      </Link> -->
-      <!-- <Link
-        size="lg"
-        style="outline"
-        rel="noopener"
-        href="https://github.com/surjithctly/astroship"
-        class="flex gap-1 items-center justify-center"
-        target="_blank">
-        <Icon class="text-black w-4 h-4" name="bx:bxl-github" />
-        GitHub Repo
-      </Link> -->
+<a
+  href="https://docs.google.com/forms/d/e/1FAIpQLSca_5ez9SbxFeilS8z-KPIROOC6rgIrnetf4HSf3mAZnoB-Bg/viewform?usp=dialog"
+  target="_blank"
+  rel="noopener noreferrer"
+  class="px-6 py-3 text-white bg-black rounded-lg text-lg font-semibold hover:bg-gray-800 transition"
+>
+  Start Free
+</a>
+      <a
+        href="/contact"
+        class="px-6 py-3 text-black bg-white border border-gray-300 rounded-lg text-lg font-semibold hover:bg-gray-100 transition">
+        Book a Demo
+      </a>
     </div>
+    <p class="text-base mt-6 text-slate-600 max-w-xl">
+      OWAY is your AI-powered executive assistant — automating emails,
+      scheduling meetings, and handling phone calls to save you time and
+      eliminate communication overload.
+    </p>
   </div>
 </main>

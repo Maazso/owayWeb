@@ -3,54 +3,58 @@ import Layout from "@layouts/Layout.astro";
 import Container from "@components/container.astro";
 import Sectionhead from "@components/sectionhead.astro";
 import PricingCard from "@components/pricing.astro";
+
 const pricing = [
   {
-    name: "Plus Plan",
-    price: "$13.50/month",
+    name: "Starter Plan",
+    price: "$0/month",
     popular: false,
     features: [
-      "1 inbox and calendar per user",
-      "The best email drafts",
-      "Email Sorting and Categorization",
-      "Meeting Notetaker",
+      "Basic email triage",
+      "Weekly summary report",
+      "50 emails/month limit",
     ],
     button: {
-      text: "Get Started for Free",
-      link: "https://forms.gle/TFHH2vHVaXax5VdS8",
+      text: "Start Free",
+      link: "https://docs.google.com/forms/d/e/1FAIpQLSca_5ez9SbxFeilS8z-KPIROOC6rgIrnetf4HSf3mAZnoB-Bg/viewform?usp=dialog",
+
     },
-    note: "7-day free trial included — cancel anytime",
+    note: "Try OWAY for free — no credit card required.",
   },
   {
     name: "Pro Plan",
     price: "$35.50/month",
     popular: true,
     features: [
-      "Everything in Plus",
-      "Extended usage limits",
+      "Unlimited email triage",
+      "Calendar automation",
+      "Call summarization",
+      "Task follow-ups",
       "Priority support",
-      "Custom integrations",
-      "Multi-Account Support",
     ],
     button: {
-      text: "Get Started for Free",
-      link: "https://forms.gle/TFHH2vHVaXax5VdS8",
+      text: "Start Free Trial",
+      link: "https://docs.google.com/forms/d/e/1FAIpQLSca_5ez9SbxFeilS8z-KPIROOC6rgIrnetf4HSf3mAZnoB-Bg/viewform?usp=dialog",
+
     },
-    note: "7-day free trial included — cancel anytime",
+    note: "Best for professionals managing high volume.",
   },
   {
-    name: "Team Plan",
-    price: "Talk to sales",
+    name: "Value+ Plan",
+    price: "Usage-based",
     popular: false,
     features: [
-      "Advanced features",
-      "Team-wide rules",
-      "Usage-based pricing",
-      "Dedicated Account Manager",
+      "Everything in Pro",
+      "Multi-user support",
+      "Custom usage tracking",
+      "Pay per email, task, or call handled",
+      "Only pay for what you use",
     ],
     button: {
-      text: "Talk to sales",
+      text: "Talk to Sales",
       link: "/contact",
     },
+    note: "Built for businesses that want flexible, value-based billing.",
   },
 ];
 ---
@@ -60,12 +64,52 @@ const pricing = [
     <Sectionhead>
       <Fragment slot="title">Pricing</Fragment>
       <Fragment slot="desc">
-        Simple & Predictable pricing. No Surprises.
+        Simple & predictable pricing. No surprises. OWAY adapts to how you work — whether you're just starting or scaling a team.
       </Fragment>
     </Sectionhead>
 
     <div class="grid md:grid-cols-3 gap-10 mx-auto max-w-screen-lg mt-12">
-      {pricing.map((item) => <PricingCard plan={item} />)}
-    </div>
+      {pricing.map((item) => (
+        <div class="flex flex-col h-full">
+          <PricingCard plan={item} />
+        </div>
+      ))}
+    </div>    
   </Container>
+  
+    {/* Optional: Testimonial or Social Proof */}
+<div class="text-center mt-20 text-slate-700 text-lg leading-relaxed max-w-4xl mx-auto px-4">
+  <p class="text-2xl font-semibold italic text-slate-900 mb-4">
+    “OWAY Pro saved me 10+ hours a week.”
+  </p>
+  <p class="text-base text-slate-600">
+    — CEO, AXM-capital
+  </p>
+<p class="text-base text-slate-500 italic mt-2">
+  Trusted by early adopters across industries.
+</p>
+
+<section class="mt-24 max-w-4xl lg:max-w-5xl mx-auto px-4">
+  <h3 class="text-3xl font-bold mb-8 text-center">Frequently Asked Questions</h3>
+      <div class="space-y-4">
+        <details class="bg-slate-50 p-4 rounded-lg shadow">
+          <summary class="cursor-pointer font-medium text-slate-800">What’s included in the Free Starter tier?</summary>
+          <p class="text-slate-600 mt-2 text-sm">Basic email triage, summaries, and limited usage — ideal for exploring OWAY.</p>
+        </details>
+        <details class="bg-slate-50 p-4 rounded-lg shadow">
+          <summary class="cursor-pointer font-medium text-slate-800">Can I upgrade mid-month?</summary>
+          <p class="text-slate-600 mt-2 text-sm">Yes, you can upgrade anytime and your usage will carry over.</p>
+        </details>
+        <details class="bg-slate-50 p-4 rounded-lg shadow">
+          <summary class="cursor-pointer font-medium text-slate-800">Do you offer yearly billing discounts?</summary>
+          <p class="text-slate-600 mt-2 text-sm">Yes! Yearly subscriptions get 20% off. Contact us for more.</p>
+        </details>
+        <details class="bg-slate-50 p-4 rounded-lg shadow">
+          <summary class="cursor-pointer font-medium text-slate-800">Is my data secure and private?</summary>
+          <p class="text-slate-600 mt-2 text-sm">Absolutely. OWAY uses encrypted storage and SOC 2/ISO 27001 infrastructure.</p>
+        </details>
+      </div>
+    </section>
+    </div>
 </Layout>
+

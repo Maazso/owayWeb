@@ -116,17 +116,79 @@ const features = [
 ---
 
 <div class="mt-16 md:mt-0">
-  <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
-    Everything you need for your business success
-  </h2>
-  <p class="text-lg mt-4 text-slate-600">
-    OWAY comes fully equipped with powerful features. It combines cutting-edge
-    AI technology with seamless integration, delivering a smarter, more
-    efficient experience in email management, calendar scheduling, and phone automation.
-  </p>
+  </div>
+<div class="mt-20 text-center">
+  <h2 class="text-4xl lg:text-5xl font-bold text-slate-900">Everything you need for your business</h2>
+  <!-- <p class="text-lg mt-4 text-slate-600 max-w-2xl mx-auto">
+    OWAY combines cutting-edge AI with seamless workflows to help you manage email, meetings, phone calls, and tasks — all from one smart assistant.
+  </p> -->
 </div>
 
-<div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16">
+<div class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8">
+  {[
+    {
+      emoji: "✉️",
+      title: "Smart Email Inbox",
+      color: "bg-blue-50",
+      benefit: "Clear your inbox in minutes with intelligent triage and templates.",
+      features: [
+        "Email Analytics",
+        "Advanced Search Filters",
+        "Customizable Templates",
+        "Natural Language Commands",
+      ],
+    },
+    {
+      emoji: "📆",
+      title: "Calendar & Scheduling",
+      color: "bg-purple-50",
+      benefit: "Never double-book again. OWAY manages your calendar like a pro.",
+      features: [
+        "Calendar Integration",
+        "Smart Meeting Scheduling",
+        "Time Zone Adjustments",
+        "Team Coordination",
+      ],
+    },
+    {
+      emoji: "📞",
+      title: "AI Call Assistant",
+      color: "bg-green-50",
+      benefit: "Let OWAY handle and summarize phone calls for you.",
+      features: [
+        "Call Automation",
+        "Voice Commands",
+        "Smart Notifications",
+        "Weather & Traffic",
+      ],
+    },
+    {
+      emoji: "✅",
+      title: "Task Follow-Ups",
+      color: "bg-yellow-50",
+      benefit: "Stay on top of tasks with automated follow-ups and insights.",
+      features: [
+        "Task Management",
+        "Productivity Insights",
+        "App Integrations",
+        "Offline Access",
+      ],
+    },
+  ].map((card) => (
+    <div class={`p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition ${card.color}`}>
+      <h3 class="text-xl font-bold text-slate-900 mb-1">{card.emoji} {card.title}</h3>
+      <p class="text-sm text-slate-700 mb-4">{card.benefit}</p>
+      <ul class="space-y-2 text-slate-800 text-sm">
+        {card.features.map((feature) => (
+          <li class="flex items-center">
+            <span class="mr-2 text-base text-slate-500">•</span> {feature}
+          </li>
+        ))}
+      </ul>
+    </div>
+  ))}
+</div>
+<!-- <div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16">
   {
     features.map((item) => (
       <div class="flex gap-4 items-start">
@@ -139,5 +201,5 @@ const features = [
         </div>
       </div>
     ))
-  }
+  } -->
 </div>
