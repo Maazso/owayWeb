@@ -5,6 +5,6 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://oway.life",
+  site: "https://oway.live",
   integrations: [tailwind(), mdx(), sitemap()],
 });

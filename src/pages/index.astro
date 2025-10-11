@@ -3,6 +3,7 @@ import Container from "@components/container.astro";
 import Cta from "@components/cta.astro";
 import Features from "@components/features.astro";
 import Hero from "@components/hero.astro";
+import HowItWorks from "@components/howitworks.astro";
 import Logos from "@components/logos.astro";
 import Layout from "@layouts/Layout.astro";
 ---
@@ -11,7 +12,70 @@ import Layout from "@layouts/Layout.astro";
   <Container>
     <Hero />
     <Features />
+    <HowItWorks />
     <!-- <Logos /> -->
     <Cta />
   </Container>
+
+  <!-- Schema.org Structured Data for LLMs -->
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "OWAY",
+    "applicationCategory": "ProductivityApplication",
+    "operatingSystem": "Web, iOS, Android",
+    "description": "AI-powered executive assistant that automates email management, meeting scheduling, and phone call handling to save high-performers 10+ hours per week.",
+    "url": "https://oway.live",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock",
+      "description": "Free trial available"
+    },
+    "featureList": [
+      "Smart Email Inbox Management",
+      "Automated Meeting Scheduling",
+      "AI Phone Call Assistant",
+      "Calendar Integration",
+      "Voice Command Support",
+      "Time Zone Management",
+      "Natural Language Processing",
+      "Email Analytics",
+      "Third-Party App Integration",
+      "Multi-Language Support",
+      "Advanced Security & Encryption"
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "ratingCount": "127",
+      "bestRating": "5"
+    },
+    "provider": {
+      "@type": "Organization",
+      "name": "OWAY",
+      "url": "https://oway.live"
+    }
+  })} />
+
+  <!-- Organization Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "OWAY",
+    "url": "https://oway.live",
+    "logo": "https://oway.live/openoway.jpg",
+    "description": "OWAY provides AI-powered executive assistant services to help professionals automate email, meetings, and phone calls.",
+    "foundingDate": "2024",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "Customer Service",
+      "url": "https://oway.live/contact"
+    },
+    "sameAs": [
+      "https://twitter.com/owaylife",
+      "https://linkedin.com/company/oway"
+    ]
+  })} />
 </Layout>

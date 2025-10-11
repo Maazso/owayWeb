@@ -3,7 +3,7 @@ draft: false
 title: "Introducing OWAY: Your AI-Powered Email Assistant"
 snippet: "OWAY revolutionizes the way you manage your inbox by providing intelligent, efficient, and personalized email assistance."
 image: {
-    src: "https://images.unsplash.com/photo-1627163439134-7a8c47e08208?&fit=crop&w=430&h=240",
+    src: "https://images.unsplash.com/photo-1552664730-d307ca884978?&fit=crop&w=800&h=600",
     alt: "OWAY AI Email Assistant"
 }
 publishDate: "2025-01-12 09:00"

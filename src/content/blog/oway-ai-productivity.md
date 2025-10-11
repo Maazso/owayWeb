@@ -3,7 +3,7 @@ draft: false
 title: "The Future of Productivity: Why You Need an AI Email Assistant"
 snippet: "Email overload is killing productivity. Discover how an AI email assistant like OWAY can help you work smarter, not harder."
 image: {
-    src: "https://images.unsplash.com/photo-1627163439134-7a8c47e08208?&fit=crop&w=430&h=240",
+    src: "https://images.unsplash.com/photo-1531498860502-7c67cf02f657?&fit=crop&w=800&h=600",
     alt: "AI Email Productivity"
 }
 publishDate: "2024-08-19 09:00"

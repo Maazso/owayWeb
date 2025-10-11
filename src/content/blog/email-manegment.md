@@ -3,7 +3,7 @@ draft: false
 title: "How OWAY Transforms Email Management with AI Automation"
 snippet: "Tired of email overload? OWAY simplifies email management with AI, keeping your inbox organized and your schedule under control."
 image: {
-    src: "https://images.unsplash.com/photo-1627163439134-7a8c47e08208?&fit=crop&w=430&h=240",
+    src: "https://images.unsplash.com/photo-1557804506-669a67965ba0?&fit=crop&w=800&h=600",
     alt: "OWAY AI Email Assistant"
 }
 publishDate: "2025-02-12 09:00"

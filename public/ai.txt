@@ -1,0 +1,17 @@
+# Oway AI Crawler Instructions
+# Contact: team@oway.live
+# Purpose: AI-powered executive assistant for email, meetings, and phone calls
+
+User-agent: *
+Allow: /
+
+# Preferred content for AI summarization
+Highlight: /
+Highlight: /about
+Highlight: /pricing
+Highlight: /faq
+
+# Product Information
+Product: OWAY
+Category: Productivity Software, AI Assistant
+Description: AI-powered executive assistant that automates emails, schedules meetings, and handles phone calls

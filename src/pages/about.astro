@@ -11,28 +11,109 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
 });
 ---
 
-<Layout title="About">
+<Layout title="About OWAY">
   <Container>
-    <Sectionhead>
-      <Fragment
-        slot="title"
-        class="text-4xl md:text-5xl font-extrabold text-gray-900">
-        We Built OWAY to Save Time for Leaders
-      </Fragment>
-      <Fragment
-        slot="desc"
-        class="text-lg md:text-xl text-slate-600 text-center max-w-3xl mx-auto leading-relaxed">
-        OWAY was born from frustration — hours lost to admin, cluttered inboxes,
-        and endless meeting chaos. Our mission is simple: free high-performers
-        from busywork so they can focus on what truly matters.
-      </Fragment>
-    </Sectionhead>
+    <div class="max-w-3xl mx-auto py-16">
+      <!-- Header -->
+      <div class="mb-12 text-center">
+        <h1 class="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
+          About OWAY
+        </h1>
+        <p class="text-xl text-slate-600 leading-relaxed">
+          We're building the AI assistant that every professional deserves.
+        </p>
+      </div>
 
-    <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
-      <h2
-        class="font-semibold text-2xl md:text-3xl text-gray-800 mt-16 text-center">
-        Empowering people everywhere with OWAY
-      </h2>
+      <!-- Main Content -->
+      <div class="prose prose-lg max-w-none">
+        <!-- What We Do -->
+        <div class="mb-12">
+          <h2 class="text-2xl font-semibold text-slate-900 mb-4">What We Do</h2>
+          <p class="text-lg text-slate-700 leading-relaxed mb-4">
+            OWAY is an AI-powered executive assistant that handles your emails, meetings, and phone calls. We help busy professionals reclaim 10+ hours per week by automating communication tasks that drain productivity.
+          </p>
+          <p class="text-lg text-slate-700 leading-relaxed">
+            Our intelligent platform learns your preferences, understands context, and manages your entire communication workflow—so you can focus on what truly matters.
+          </p>
+        </div>
+
+        <!-- Why We Built OWAY -->
+        <div class="mb-12">
+          <h2 class="text-2xl font-semibold text-slate-900 mb-4">Why We Built OWAY</h2>
+          <p class="text-lg text-slate-700 leading-relaxed mb-4">
+            OWAY was born from personal frustration. Like many professionals, we spent hours each day drowning in emails, coordinating schedules, and managing endless communications—time that should have been spent on meaningful work.
+          </p>
+          <p class="text-lg text-slate-700 leading-relaxed">
+            We realized that in 2024, professionals shouldn't be spending half their day on administrative busywork. With advances in AI, we could finally build an assistant that works 24/7, never forgets, and gets smarter over time. So we built OWAY—the assistant we wished we had.
+          </p>
+        </div>
+
+        <!-- Our Mission -->
+        <div class="mb-12">
+          <h2 class="text-2xl font-semibold text-slate-900 mb-4">Our Mission</h2>
+          <p class="text-lg text-slate-700 leading-relaxed">
+            To free high-performers from communication busywork so they can focus on building, creating, and leading. We believe everyone deserves an executive assistant, not just C-suite executives.
+          </p>
+        </div>
+
+        <!-- Who It's For -->
+        <div class="mb-12">
+          <h2 class="text-2xl font-semibold text-slate-900 mb-4">Who OWAY Is For</h2>
+          <p class="text-lg text-slate-700 leading-relaxed mb-4">
+            OWAY is built for executives, managers, consultants, sales professionals, and anyone who deals with high email volume and frequent meeting coordination. If you find yourself:
+          </p>
+          <ul class="space-y-2 text-lg text-slate-700 ml-6">
+            <li>• Spending hours daily managing your inbox</li>
+            <li>• Playing email ping-pong to schedule meetings</li>
+            <li>• Missing important messages in the noise</li>
+            <li>• Wishing you had more time for strategic work</li>
+          </ul>
+          <p class="text-lg text-slate-700 leading-relaxed mt-4">
+            Then OWAY is for you.
+          </p>
+        </div>
+
+        <!-- Our Values -->
+        <div class="mb-12">
+          <h2 class="text-2xl font-semibold text-slate-900 mb-4">Our Values</h2>
+          <div class="space-y-4">
+            <div>
+              <h3 class="text-lg font-semibold text-slate-900 mb-2">Privacy First</h3>
+              <p class="text-slate-700">Your data is yours. We use enterprise-grade encryption and never sell or share your information.</p>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-slate-900 mb-2">Always Learning</h3>
+              <p class="text-slate-700">OWAY gets smarter over time, adapting to your communication style and preferences.</p>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-slate-900 mb-2">Human-Centric</h3>
+              <p class="text-slate-700">AI should augment, not replace, human capability. We build tools that empower people.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Get Started -->
+        <div class="text-center pt-8 border-t border-slate-200">
+          <h2 class="text-2xl font-semibold text-slate-900 mb-4">Ready to Reclaim Your Time?</h2>
+          <p class="text-lg text-slate-700 mb-6">
+            Join professionals who are already saving 10+ hours per week with OWAY.
+          </p>
+          <div class="flex flex-col sm:flex-row justify-center gap-4">
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSca_5ez9SbxFeilS8z-KPIROOC6rgIrnetf4HSf3mAZnoB-Bg/viewform?usp=dialog"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="px-6 py-3 text-white bg-black rounded-lg text-lg font-semibold hover:bg-gray-800 transition">
+              Start Free
+            </a>
+            <a
+              href="/contact"
+              class="px-6 py-3 text-black bg-white border border-gray-300 rounded-lg text-lg font-semibold hover:bg-gray-100 transition">
+              Contact Us
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   </Container>
 </Layout>

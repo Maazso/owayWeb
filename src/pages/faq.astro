@@ -1,0 +1,136 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+
+const faqs = [
+  {
+    question: "What is OWAY and how does it work?",
+    answer: "OWAY is an AI-powered executive assistant that automates your email management, meeting scheduling, and phone call handling. It integrates with your existing email and calendar systems to intelligently triage messages, suggest optimal meeting times, send invitations, and even handle phone calls on your behalf. Think of it as having a dedicated executive assistant available 24/7."
+  },
+  {
+    question: "How does OWAY save me time?",
+    answer: "OWAY eliminates hours of administrative work by automatically handling routine tasks like email sorting, calendar management, and meeting coordination. Users typically save 10+ hours per week that would otherwise be spent on email triage, scheduling back-and-forth, and managing communications. This frees you to focus on strategic work and high-value activities."
+  },
+  {
+    question: "Is my data secure with OWAY?",
+    answer: "Yes. OWAY uses advanced encryption to protect your data both in transit and at rest. We comply with industry-standard security protocols including SOC 2 compliance, and we never sell or share your personal information with third parties. Your emails, calendar data, and communications are kept strictly confidential and secure."
+  },
+  {
+    question: "What email providers and calendar systems does OWAY support?",
+    answer: "OWAY integrates seamlessly with Gmail, Outlook, Office 365, and other major email providers. For calendars, we support Google Calendar, Microsoft Outlook Calendar, Apple Calendar, and other CalDAV-compatible systems. Our integrations are designed to work with your existing workflow without requiring you to switch tools."
+  },
+  {
+    question: "Can OWAY integrate with my other productivity tools?",
+    answer: "Yes. OWAY connects with popular productivity apps including Slack, Microsoft Teams, Zoom, Google Meet, Salesforce, and many others. Our third-party app integration feature ensures OWAY fits seamlessly into your existing tech stack and workflow."
+  },
+  {
+    question: "How much does OWAY cost?",
+    answer: "OWAY offers flexible pricing plans to suit different needs. You can start with our free trial to experience the platform. For detailed pricing information including enterprise plans, visit our pricing page or contact our sales team for a custom quote."
+  },
+  {
+    question: "Who is OWAY best suited for?",
+    answer: "OWAY is ideal for executives, managers, consultants, sales professionals, and anyone who deals with high email volume and frequent meeting scheduling. It's particularly valuable for leaders who want to reclaim their time from administrative tasks and focus on strategic priorities. Teams and organizations also benefit from OWAY's collaborative scheduling and coordination features."
+  },
+  {
+    question: "How does OWAY compare to hiring a virtual assistant?",
+    answer: "Unlike a human virtual assistant, OWAY is available 24/7, responds instantly, never takes time off, and costs significantly less. While a full-time assistant can cost $30,000-$60,000+ annually, OWAY provides similar capabilities at a fraction of the cost. Additionally, OWAY learns your preferences over time and improves its performance through AI, offering consistent, reliable assistance."
+  },
+  {
+    question: "Does OWAY work across different time zones?",
+    answer: "Absolutely. OWAY automatically handles time zone conversions and adjustments when scheduling meetings with participants in different locations. It ensures everyone receives invitations with the correct local time and prevents scheduling conflicts caused by time zone confusion."
+  },
+  {
+    question: "Can I use voice commands with OWAY?",
+    answer: "Yes. OWAY supports voice command functionality, allowing you to manage emails, schedule meetings, and control various features hands-free. This is especially useful when you're on the go or multitasking."
+  },
+  {
+    question: "What kind of analytics and insights does OWAY provide?",
+    answer: "OWAY offers comprehensive analytics including email response times, meeting frequency, time allocation across different activities, and productivity patterns. These AI-powered insights help you understand how you spend your time and identify opportunities for further optimization."
+  },
+  {
+    question: "Can OWAY handle phone calls?",
+    answer: "Yes. OWAY's phone call automation capabilities allow it to handle incoming calls, take messages, and even schedule meetings via phone on your behalf. This feature ensures you never miss important communications while minimizing interruptions."
+  },
+  {
+    question: "How does OWAY learn my preferences?",
+    answer: "OWAY uses natural language processing and machine learning to understand your communication patterns, scheduling preferences, and priorities. Over time, it learns which emails are important, your preferred meeting times, and how you typically respond to different situations. The more you use OWAY, the more personalized and accurate it becomes."
+  },
+  {
+    question: "Can my team use OWAY together?",
+    answer: "Yes. OWAY offers collaborative scheduling features that allow team members to coordinate calendars, share availability, and schedule group meetings efficiently. Teams can maintain consistent communication standards and streamline coordination across departments."
+  },
+  {
+    question: "What happens if OWAY makes a mistake?",
+    answer: "While OWAY is highly accurate, you always maintain full control. You can review, edit, or cancel any action OWAY takes before it's finalized. OWAY learns from corrections and continuously improves its accuracy based on your feedback."
+  },
+  {
+    question: "Does OWAY work offline?",
+    answer: "OWAY provides offline access to your emails and calendar events, allowing you to review information even without an internet connection. However, automated actions like sending emails or scheduling meetings require an active connection."
+  },
+  {
+    question: "How do I get started with OWAY?",
+    answer: "Getting started is simple. Click 'Start Free' on our homepage to begin your trial. You'll connect your email and calendar accounts, set your preferences, and OWAY will guide you through the setup process. Most users are up and running within 10 minutes."
+  },
+  {
+    question: "Can OWAY support multiple languages?",
+    answer: "Yes. OWAY offers comprehensive multilingual support, allowing you to use the platform in your preferred language. This makes it accessible for international teams and global organizations."
+  }
+];
+---
+
+<Layout title="Frequently Asked Questions - OWAY">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">
+        Frequently Asked Questions
+      </Fragment>
+      <Fragment slot="desc">
+        Everything you need to know about OWAY, your AI-powered executive assistant
+      </Fragment>
+    </Sectionhead>
+
+    <div class="max-w-4xl mx-auto mt-16">
+      <div class="space-y-8">
+        {faqs.map((faq, index) => (
+          <div class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm hover:shadow-md transition">
+            <h3 class="text-xl font-bold text-slate-900 mb-3">
+              {faq.question}
+            </h3>
+            <p class="text-slate-600 leading-relaxed">
+              {faq.answer}
+            </p>
+          </div>
+        ))}
+      </div>
+
+      <div class="mt-16 bg-blue-50 border border-blue-200 rounded-xl p-8 text-center">
+        <h3 class="text-2xl font-bold text-slate-900 mb-3">
+          Still have questions?
+        </h3>
+        <p class="text-slate-600 mb-6">
+          Our team is here to help. Get in touch and we'll answer any questions you have.
+        </p>
+        <a
+          href="/contact"
+          class="inline-block px-6 py-3 text-white bg-black rounded-lg text-lg font-semibold hover:bg-gray-800 transition">
+          Contact Us
+        </a>
+      </div>
+    </div>
+
+    <!-- Schema.org FAQ Structured Data for LLMs -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": faqs.map(faq => ({
+        "@type": "Question",
+        "name": faq.question,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": faq.answer
+        }
+      }))
+    })} />
+  </Container>
+</Layout>
