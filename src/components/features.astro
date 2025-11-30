@@ -118,70 +118,95 @@ const features = [
 <div class="mt-16 md:mt-0">
   </div>
 <div class="mt-20 text-center">
-  <h2 class="text-4xl lg:text-5xl font-bold text-slate-900">Everything you need for your business</h2>
-  <!-- <p class="text-lg mt-4 text-slate-600 max-w-2xl mx-auto">
-    OWAY combines cutting-edge AI with seamless workflows to help you manage email, meetings, phone calls, and tasks — all from one smart assistant.
-  </p> -->
+  <h2 class="text-4xl lg:text-5xl font-bold text-slate-900">AI-Powered Email & Calendar Intelligence</h2>
+  <p class="text-lg mt-4 text-slate-600 max-w-3xl mx-auto">
+    OWAY uses advanced AI to understand your emails, prioritize what matters, draft perfect replies, and automate your workflow — saving you hours every day.
+  </p>
 </div>
 
 <div class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8">
   {[
     {
-      emoji: "✉️",
-      title: "Smart Email Inbox",
-      color: "bg-blue-50",
-      benefit: "Clear your inbox in minutes with intelligent triage and templates.",
+      emoji: "✨",
+      title: "AI Smart Reply",
+      color: "bg-gradient-to-br from-blue-50 to-purple-50",
+      benefit: "Generate perfect email responses in seconds with AI-powered context awareness.",
       features: [
-        "Email Analytics",
-        "Advanced Search Filters",
-        "Customizable Templates",
-        "Natural Language Commands",
+        "4 tone options: Professional, Friendly, Formal, Casual",
+        "Context-aware replies using full thread history",
+        "Confidence scoring for quality assurance",
+        "Calendar integration for meeting requests",
+      ],
+    },
+    {
+      emoji: "🤖",
+      title: "Email Autopilot",
+      color: "bg-gradient-to-br from-purple-50 to-pink-50",
+      benefit: "Let AI automatically triage your inbox while you focus on what matters.",
+      features: [
+        "Automatic email categorization and labeling",
+        "VIP protection - never miss important emails",
+        "Rule-based automation (archive, snooze, priority)",
+        "Time-saving analytics and smart notifications",
+      ],
+    },
+    {
+      emoji: "⭐",
+      title: "VIP Contact Management",
+      color: "bg-gradient-to-br from-yellow-50 to-orange-50",
+      benefit: "Automatically identify and prioritize your most important contacts.",
+      features: [
+        "AI-powered VIP identification from email patterns",
+        "Importance scoring (0-100 scale) with visual indicators",
+        "Complete email history tracking per contact",
+        "LLM-generated relationship insights",
+      ],
+    },
+    {
+      emoji: "🔍",
+      title: "AI Sender Insights",
+      color: "bg-gradient-to-br from-green-50 to-teal-50",
+      benefit: "Get instant AI analysis of your email relationships and patterns.",
+      features: [
+        "LLM-generated sender summaries and relationship context",
+        "Suggested actions with confidence scores",
+        "Email frequency and communication pattern analysis",
+        "Urgency tracking and sentiment analysis",
       ],
     },
     {
       emoji: "📆",
       title: "Calendar & Scheduling",
-      color: "bg-purple-50",
+      color: "bg-gradient-to-br from-indigo-50 to-blue-50",
       benefit: "Never double-book again. OWAY manages your calendar like a pro.",
       features: [
-        "Calendar Integration",
-        "Smart Meeting Scheduling",
-        "Time Zone Adjustments",
-        "Team Coordination",
-      ],
-    },
-    {
-      emoji: "📞",
-      title: "AI Call Assistant",
-      color: "bg-green-50",
-      benefit: "Let OWAY handle and summarize phone calls for you.",
-      features: [
-        "Call Automation",
-        "Voice Commands",
-        "Smart Notifications",
-        "Weather & Traffic",
+        "Seamless Google Calendar integration",
+        "Smart meeting scheduling with Cal.com",
+        "Time zone adjustments and team coordination",
+        "Meeting recordings with AI summaries",
       ],
     },
     {
       emoji: "✅",
-      title: "Task Follow-Ups",
-      color: "bg-yellow-50",
-      benefit: "Stay on top of tasks with automated follow-ups and insights.",
+      title: "Task Management & Analytics",
+      color: "bg-gradient-to-br from-cyan-50 to-blue-50",
+      benefit: "Stay on top of tasks with AI-powered productivity insights.",
       features: [
-        "Task Management",
-        "Productivity Insights",
-        "App Integrations",
-        "Offline Access",
+        "AI-generated tasks from email actions",
+        "Productivity analytics and time-saving metrics",
+        "Active and pending task tracking",
+        "Email volume and response time analysis",
       ],
     },
   ].map((card) => (
-    <div class={`p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition ${card.color}`}>
+    <div class={`p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-lg transition-all duration-300 ${card.color}`}>
       <h3 class="text-xl font-bold text-slate-900 mb-1">{card.emoji} {card.title}</h3>
-      <p class="text-sm text-slate-700 mb-4">{card.benefit}</p>
+      <p class="text-sm text-slate-700 mb-4 font-medium">{card.benefit}</p>
       <ul class="space-y-2 text-slate-800 text-sm">
         {card.features.map((feature) => (
-          <li class="flex items-center">
-            <span class="mr-2 text-base text-slate-500">•</span> {feature}
+          <li class="flex items-start">
+            <span class="mr-2 text-base text-green-600 font-bold">✓</span>
+            <span class="flex-1">{feature}</span>
           </li>
         ))}
       </ul>

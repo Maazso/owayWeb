@@ -21,31 +21,47 @@ import Layout from "@layouts/Layout.astro";
   <script type="application/ld+json" set:html={JSON.stringify({
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
-    "name": "OWAY",
+    "name": "OWAY - AI Email & Calendar Assistant",
     "applicationCategory": "ProductivityApplication",
     "operatingSystem": "Web, iOS, Android",
-    "description": "AI-powered executive assistant that automates email management, meeting scheduling, and phone call handling to save high-performers 10+ hours per week.",
+    "description": "AI-powered email and calendar assistant that uses advanced LLM technology to automatically triage emails, generate smart replies with tone selection, manage VIP contacts, provide sender insights, automate workflows, and save professionals 10+ hours per week. Features include AI Smart Reply with 4 tone options (Professional, Friendly, Formal, Casual), Email Autopilot with VIP protection, automatic contact importance scoring, LLM-generated relationship insights, sentiment analysis, urgency tracking, and comprehensive productivity analytics.",
     "url": "https://oway.live",
     "offers": {
       "@type": "Offer",
       "price": "0",
       "priceCurrency": "USD",
       "availability": "https://schema.org/InStock",
-      "description": "Free trial available"
+      "description": "Free trial with premium AI features available"
     },
     "featureList": [
-      "Smart Email Inbox Management",
-      "Automated Meeting Scheduling",
-      "AI Phone Call Assistant",
-      "Calendar Integration",
-      "Voice Command Support",
-      "Time Zone Management",
-      "Natural Language Processing",
-      "Email Analytics",
-      "Third-Party App Integration",
-      "Multi-Language Support",
-      "Advanced Security & Encryption"
+      "AI Smart Reply - Generate context-aware email responses with 4 tone options (Professional, Friendly, Formal, Casual)",
+      "Email Autopilot - Automatic email triage with intelligent categorization and VIP protection",
+      "VIP Contact Management - AI-powered contact identification with importance scoring (0-100 scale)",
+      "AI Sender Insights - LLM-generated relationship summaries with suggested actions and confidence scores",
+      "Smart Email Categorization - Automatic sorting into Needs Reply, Waiting for Response, FYI/Read Later, Calendar/Scheduling, Clients/VIPs, and more",
+      "Thread Conversation View - Gmail-style email threading with AI-generated thread summaries",
+      "Auto-Save Email Drafts - Automatic draft saving with Cc/Bcc support",
+      "Email History Tracking - Complete communication history per contact with frequency analysis",
+      "Sentiment Analysis - AI-powered email sentiment detection and tracking",
+      "Urgency Scoring - Automatic urgency detection for prioritization",
+      "Email Intent Recognition - AI classification of email purposes (meeting request, question, action required, etc.)",
+      "Context-Aware Replies - Smart reply generation using full email thread history",
+      "Calendar Integration - Seamless Google Calendar sync with AI-powered meeting scheduling",
+      "Meeting Recording Summaries - AI-generated summaries of meeting recordings",
+      "Task Management - AI-generated tasks from email actions with status tracking",
+      "Productivity Analytics - Email volume, response time, and time-saving metrics",
+      "Push Notifications - Smart notifications for high-priority emails via Firebase Cloud Messaging",
+      "Advanced Search - Full-text email search with filters",
+      "Offline Access - SQLite-based local caching for instant email access",
+      "Multi-Account Support - Manage multiple email accounts in one interface",
+      "End-to-End Encryption - Advanced security with OAuth 2.0 and encrypted data storage",
+      "Natural Language Processing - Interact using natural language commands",
+      "Time Zone Management - Automatic time zone adjustments for global teams",
+      "Third-Party Integration - Connect with Cal.com, Google Calendar, and more"
     ],
+    "applicationSubCategory": "Email Management, Calendar Scheduling, AI Assistant, Productivity Tool",
+    "softwareVersion": "1.0",
+    "keywords": "AI email assistant, smart reply, email automation, VIP management, sender insights, email triage, calendar scheduling, productivity app, LLM email tool, context-aware replies, email sentiment analysis, urgency detection, contact importance scoring, automated email workflow, meeting scheduling, task management, email analytics",
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": "4.8",
@@ -56,6 +72,11 @@ import Layout from "@layouts/Layout.astro";
       "@type": "Organization",
       "name": "OWAY",
       "url": "https://oway.live"
+    },
+    "screenshot": "https://oway.live/openoway.jpg",
+    "softwareHelp": {
+      "@type": "WebPage",
+      "url": "https://oway.live/help"
     }
   })} />
 
@@ -64,10 +85,24 @@ import Layout from "@layouts/Layout.astro";
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "OWAY",
+    "alternateName": "OWAY AI Email Assistant",
     "url": "https://oway.live",
     "logo": "https://oway.live/openoway.jpg",
-    "description": "OWAY provides AI-powered executive assistant services to help professionals automate email, meetings, and phone calls.",
+    "description": "OWAY provides AI-powered email and calendar assistant services using advanced LLM technology. Our platform helps professionals save 10+ hours per week by automating email triage, generating context-aware smart replies, managing VIP contacts, providing sender insights, and streamlining workflows with intelligent automation.",
     "foundingDate": "2024",
+    "slogan": "Your AI-Powered Email & Calendar Intelligence",
+    "knowsAbout": [
+      "Artificial Intelligence",
+      "Email Automation",
+      "Natural Language Processing",
+      "Large Language Models",
+      "Productivity Software",
+      "Email Management",
+      "Calendar Scheduling",
+      "Sentiment Analysis",
+      "Contact Relationship Management",
+      "Workflow Automation"
+    ],
     "contactPoint": {
       "@type": "ContactPoint",
       "contactType": "Customer Service",
